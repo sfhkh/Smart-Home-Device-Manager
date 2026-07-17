@@ -1,5 +1,5 @@
 devices = []
-
+# The code will run by give them the function and make sure evrithing is running smoothly ,without error
 while True:
     print("\nSMART CLASSROOM DEVICE MANAGER")
     print("1. Add a device")
@@ -10,7 +10,7 @@ while True:
 
     choice = input("Choose an option from 1 to 5: ")
 
-    # Add a new device
+    # On this parth of the code we add the request of new devise by adding the name and all the function and request 
     if choice == "1":
         name = input("Enter device name: ").strip()
         room = input("Enter room: ").strip()
@@ -34,7 +34,7 @@ while True:
             devices.append(device)
             print("Device added successfully.")
 
-    # Update the status
+    # Update the status, the 3th parth show the the loop and functiomn 
     elif choice == "2":
         search_name = input("Enter the device name: ").strip()
         device_found = False
@@ -75,7 +75,7 @@ while True:
                 print("Room:", device["room"])
                 print("Status:", device["status"])
 
-    # Search for a device
+    # Search for a for function and make the choice of no by use no from 1-5 
     elif choice == "4":
         search_name = input("Enter the device name: ").strip()
         device_found = False
